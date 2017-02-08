@@ -9,8 +9,7 @@ class AnswersController < ApplicationController
     end
 
     private
-
-    def answer_params
-        params.require(:answer).permit(:email, :body)
-    end
+        def answer_params
+            params.require(:answer).permit(:email, :body)
+        end
 end
